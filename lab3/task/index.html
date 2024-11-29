@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Выполнение - Лабораторная работа №1</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Лабораторная работа №1</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Введение</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ЛР № 1</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../lab1/task1/" class="dropdown-item">Выполнение</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ЛР № 2</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../lab2/task/" class="dropdown-item">Выполнение</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ПР № 3</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../pr3/task/" class="dropdown-item">Выполнение</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ЛР № 3</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Выполнение</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../pr3/task/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#no-3" class="nav-link">Лабораторная работа № 3</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">Задание</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Схема базы данных</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Авторизация</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Модель «Организации»</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Модель «Агенты»</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Модель «Контракты»</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Модель «Отчёт по контракту»</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_8" class="nav-link">Модель «Сотрудники организаций»</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_9" class="nav-link">Модель «Страховые случаи»</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_10" class="nav-link">Модель «Трудовые договоры»</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#djoser" class="nav-link">Djoser</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_13" class="nav-link">Вывод</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="no-3">Лабораторная работа № 3</h1>
+<h2 id="_1">Задание</h2>
+<p>Необходимо создать программную систему, предназначенную для управления договорами страхования с физическими лицами и юридическими организациями.</p>
+<p>Страховая организация заключает договоры. Для организации оформляется коллективный договор, в котором перечислены страхуемые сотрудники: ФИО, возраст, категория риска (первая, вторая, высшая и т.п.). О предприятии хранится следующая информация: код, полное наименование, краткое наименование, адрес, банковские реквизиты (номер банка), специализация предприятия (медицинское учреждение, автотранспортное предприятие, учебное заведение и т.п.). В заключаемом коллективном договоре указывается дата заключения, срок договора (начало и конец действия договора), сумма выплат по каждой категории сотрудников, выплаты по страховым случаям. Выплаты зависят от категории сотрудника. Необходимо также хранить информацию о страховом агенте, заключившем договор (ФИО, паспортные данные, контактные данные). Каждый агент может заключить много договоров, в каждом договоре может быть оформлено несколько сотрудников. С физическим лицом заключается индивидуальный договор. Каждый конкретный договор может быть заключен только одним агентом. При возникновении страхового случая необходима информация о его дате, причине, решении о выплате страховой суммы и размере выплаты. Директор компании должен иметь возможность принять и уволить на работу страхового агента. Поэтому должна сохраняться информация о заключенных с ними трудовых договорах.</p>
+<p>Перечень возможных запросов:</p>
+<ul>
+<li>
+<p>Для заданной организации вывести список других организаций, застрахованных теми же агентами, что и заданная, для действующих договоров.</p>
+</li>
+<li>
+<p>Для каждого агента вывести количество заключенных им договоров каждого типа за определенный период времени.</p>
+</li>
+<li>
+<p>Для заданной персоны вывести список застрахованных сотрудников в одном коллективном договоре для действующих коллективных договоров.</p>
+</li>
+<li>
+<p>Вывести общую сумму выплат по каждому типу договоров при возникших страховых случаях за заданный период времени.</p>
+</li>
+<li>
+<p>Для каждого юридического лица вывести реквизиты договора и общую сумму выплат по всем категориям сотрудников.</p>
+</li>
+</ul>
+<p>Необходимо предусмотреть возможность получения отчета, в котором отражается информация о количестве действующих заключенных договоров каждого типа для всех работающих страховых агентов, общей страховой сумме по каждому типу и агенту, общем количестве и общей страховой сумме по фирме.</p>
+<h2 id="_2">Схема базы данных</h2>
+<p><img alt="Схема базы данных" src="../image1.jpg" />
+<img alt="Схема базы данных" src="../image2.jpg" /></p>
+<h2 id="_3">Авторизация</h2>
+<ul>
+<li>Для начала получим JSON Web Token. Для получения JWT необходимо выполнить POST-запрос к эндпоинту токена. Воспользуемся сервисом Postman. Введем в него следующий URL:</li>
+</ul>
+<p><img alt="Получение токена" src="../image3.jpg" /></p>
+<ul>
+<li>Чтобы использовать токен, необходимо вставить его в специальное поле:</li>
+</ul>
+<p><img alt="Использование токена" src="../image4.jpg" /></p>
+<h2 id="_4">Модель «Организации»</h2>
+<ul>
+<li>Создание организаций происходит через URL /organizations, метод POST:</li>
+</ul>
+<p><img alt="Использование токена" src="../image5.jpg" /></p>
+<ul>
+<li>Получение списка организаций происходит через URL /organizations, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image6.jpg" /></p>
+<ul>
+<li>Получение конкретной организации происходит через URL /organizations/<int:pk>, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image7.jpg" /></p>
+<h2 id="_5">Модель «Агенты»</h2>
+<ul>
+<li>Создание агентов происходит через URL /agents, метод POST:</li>
+</ul>
+<p><img alt="Использование токена" src="../image8.jpg" /></p>
+<ul>
+<li>Получение списка агентов происходит через URL /agents, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image9.jpg" /></p>
+<ul>
+<li>Получение конкретного агента происходит через URL /agents/<int:pk>, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image10.jpg" /></p>
+<h2 id="_6">Модель «Контракты»</h2>
+<ul>
+<li>Создание контракта происходит через URL /contracts, метод POST:</li>
+</ul>
+<p><img alt="Использование токена" src="../image11.jpg" /></p>
+<ul>
+<li>Получение списка контрактов происходит через URL /contracts, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image12.jpg" /></p>
+<ul>
+<li>Получение конкретного контракта происходит через URL /contracts/<int:pk>, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image13.jpg" /></p>
+<h2 id="_7">Модель «Отчёт по контракту»</h2>
+<ul>
+<li>Создание отчёта происходит через URL /contracts/report/<int:pk>, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image14.jpg" /></p>
+<h2 id="_8">Модель «Сотрудники организаций»</h2>
+<ul>
+<li>Создание сотрудника происходит через URL /employees, метод POST:</li>
+</ul>
+<p><img alt="Использование токена" src="../image15.jpg" /></p>
+<ul>
+<li>Получение списка сотрудников происходит через URL /employees, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image16.jpg" /></p>
+<ul>
+<li>Получение конкретного сотрудника происходит через URL /employees/<int:pk>, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image17.jpg" /></p>
+<h2 id="_9">Модель «Страховые случаи»</h2>
+<ul>
+<li>Создание страховых случаев происходит через URL /insurance_cases, метод POST:</li>
+</ul>
+<p><img alt="Использование токена" src="../image18.jpg" /></p>
+<ul>
+<li>Получение списка страховых случаев происходит через URL /insurance_cases, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image19.jpg" /></p>
+<ul>
+<li>Получение конкретного страхового случая происходит через URL /insurance_cases/<int:pk>, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image20.jpg" /></p>
+<h2 id="_10">Модель «Трудовые договоры»</h2>
+<ul>
+<li>Создание трудового договора происходит через URL /employment_contracts, метод POST:</li>
+</ul>
+<p><img alt="Использование токена" src="../image21.jpg" /></p>
+<ul>
+<li>Получение списка трудовых договоров происходит через URL /employment_contracts, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image22.jpg" /></p>
+<ul>
+<li>Получение конкретного трудового договора происходит через URL /employment_contracts/<int:pk>, метод GET:</li>
+</ul>
+<p><img alt="Использование токена" src="../image23.jpg" /></p>
+<h2 id="djoser">Djoser</h2>
+<h3 id="_11">Авторизация и регистрация по токенам</h3>
+<p>Для реализации авторизации и регистрации по токенам будем использовать JWT (JSON Web Token). Для этого в settings.py добавим следующие настройки:</p>
+<pre><code class="language-python">REST_FRAMEWORK = {
+    &quot;DEFAULT_AUTHENTICATION_CLASSES&quot;: [
+        &quot;rest_framework_simplejwt.authentication.JWTAuthentication&quot;,
+    ],
+}
+
+SIMPLE_JWT = {
+    &quot;AUTH_HEADER_TYPES&quot;: (&quot;Bearer&quot;,),
+}
+</code></pre>
+<p>Теперь в urls.py добавим следующие пути:</p>
+<pre><code class="language-python">urlpatterns = [
+    path(&quot;auth/&quot;, include(&quot;djoser.urls&quot;)),
+    path(&quot;auth/&quot;, include(&quot;djoser.urls.jwt&quot;)),
+    # ...
+]
+</code></pre>
+<p>Теперь можно зарегистрироваться и авторизоваться по токену. Документация по djoser описана в разделе API/Авторизация.</p>
+<h3 id="_12">Пример работы сервиса</h3>
+<p>Реализуем простой фронтенд для демонстрации работы Djoser. С помощью JS-скриптов будем сохранять полученные от сервера токены в локальное хранилище браузера и использовать их при посылке запросов.</p>
+<p>Зайдём на главную страницу сайта. И войдём в аккаунт суперпользователя:</p>
+<p><img alt="Вход в суперпользователя" src="../image24.jpg" />
+<img alt="Аккуант суперпользователя" src="../image25.jpg" /></p>
+<p>Также можно посмотреть панель администратора:
+<img alt="Панель администратора" src="../image26.jpg" /></p>
+<p>Зарегистрируем нового пользователя через созданный интерфес:
+<img alt="Регистрация пользователя" src="../image27.jpg" />
+<img alt="Аккаунт пользователя" src="../image28.jpg" /></p>
+<h2 id="_13">Вывод</h2>
+<p>В лабораторной работе я овладела навыком написания API для проекта, а также его документирования. Реализованный API покрывает основные CRUD-операции, при этом соблюдается контроль доступа к данным.</p>
+<p>Также я научилась работать с авторизацией с помощью токенов. Для этого я использовала библиотеку Djoser, узнал о JWT и в целом поняла, как работают запросы с токенами. А ещё познакомилась с сервисом Postman для тестирования запросов.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
