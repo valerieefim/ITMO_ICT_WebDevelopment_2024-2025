@@ -151,11 +151,15 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_12" class="nav-link">Сериализаторы и их описание</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#djoser" class="nav-link">Djoser</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_14" class="nav-link">Вывод</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_15" class="nav-link">Вывод</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -344,8 +348,41 @@ contract — идентификатор договора (внешний клю�
 <li>Получение конкретного трудового договора происходит через URL /employment_contracts/<int:pk>, метод GET:</li>
 </ul>
 <p><img alt="Использование токена" src="../image23.jpg" /></p>
+<h2 id="_12">Сериализаторы и их описание</h2>
+<p><strong>AgentSerializer</strong><br />
+   - <strong>Описание:</strong> Работа с агентами.<br />
+   - <strong>Вложенные сериализаторы:</strong> Нет.
+<img alt="Использование токена" src="../ser/ser1.png" /></p>
+<p><strong>OrganizationSerializer</strong><br />
+   - <strong>Описание:</strong> Работа с организациями.<br />
+   - <strong>Вложенные сериализаторы:</strong> Нет.
+<img alt="Использование токена" src="../ser/ser2.png" /></p>
+<p><strong>EmployeeSerializer</strong><br />
+   - <strong>Описание:</strong> Работа с сотрудниками.<br />
+   - <strong>Вложенные сериализаторы:</strong> OrganizationSerializer.
+<img alt="Использование токена" src="../ser/ser3.png" /></p>
+<p><strong>ContractSerializer</strong><br />
+   - <strong>Описание:</strong> Работа с договорами.<br />
+   - <strong>Вложенные сериализаторы:</strong> OrganizationSerializer, AgentSerializer, EmployeeSerializer.
+<img alt="Использование токена" src="../ser/ser4.png" /></p>
+<p><strong>InsuranceCaseSerializer</strong><br />
+   - <strong>Описание:</strong> Работа со страховыми случаями.<br />
+   - <strong>Вложенные сериализаторы:</strong> ContractSerializer.
+<img alt="Использование токена" src="../ser/ser5.png" /></p>
+<p><strong>EmploymentContractSerializer</strong><br />
+   - <strong>Описание:</strong> Работа с трудовыми договорами.<br />
+   - <strong>Вложенные сериализаторы:</strong> AgentSerializer.
+<img alt="Использование токена" src="../ser/ser6.png" /></p>
+<p><strong>InsuranceCaseShortSerializer</strong><br />
+   - <strong>Описание:</strong> Упрощённое представление страховых случаев.<br />
+   - <strong>Вложенные сериализаторы:</strong> Нет.
+<img alt="Использование токена" src="../ser/ser7.png" /></p>
+<p><strong>ContractReportSerializer</strong><br />
+   - <strong>Описание:</strong> Формирование отчёта по договору.<br />
+   - <strong>Вложенные сериализаторы:</strong> OrganizationSerializer, AgentSerializer, InsuranceCaseShortSerializer.
+<img alt="Использование токена" src="../ser/ser8.png" /></p>
 <h2 id="djoser">Djoser</h2>
-<h3 id="_12">Авторизация и регистрация по токенам</h3>
+<h3 id="_13">Авторизация и регистрация по токенам</h3>
 <p>Для реализации авторизации и регистрации по токенам будем использовать JWT (JSON Web Token). Для этого в settings.py добавим следующие настройки:</p>
 <pre><code class="language-python">REST_FRAMEWORK = {
     &quot;DEFAULT_AUTHENTICATION_CLASSES&quot;: [
@@ -365,7 +402,7 @@ SIMPLE_JWT = {
 ]
 </code></pre>
 <p>Теперь можно зарегистрироваться и авторизоваться по токену. Документация по djoser описана в разделе API/Авторизация.</p>
-<h3 id="_13">Пример работы сервиса</h3>
+<h3 id="_14">Пример работы сервиса</h3>
 <p>Реализуем простой фронтенд для демонстрации работы Djoser. С помощью JS-скриптов будем сохранять полученные от сервера токены в локальное хранилище браузера и использовать их при посылке запросов.</p>
 <p>Зайдём на главную страницу сайта. И войдём в аккаунт суперпользователя:</p>
 <p><img alt="Вход в суперпользователя" src="../image24.jpg" />
@@ -375,7 +412,7 @@ SIMPLE_JWT = {
 <p>Зарегистрируем нового пользователя через созданный интерфес:
 <img alt="Регистрация пользователя" src="../image27.jpg" />
 <img alt="Аккаунт пользователя" src="../image28.jpg" /></p>
-<h2 id="_14">Вывод</h2>
+<h2 id="_15">Вывод</h2>
 <p>В лабораторной работе я овладела навыком написания API для проекта, а также его документирования. Реализованный API покрывает основные CRUD-операции, при этом соблюдается контроль доступа к данным.</p>
 <p>Также я научилась работать с авторизацией с помощью токенов. Для этого я использовала библиотеку Djoser, узнал о JWT и в целом поняла, как работают запросы с токенами. А ещё познакомилась с сервисом Postman для тестирования запросов.</p></div>
             </div>
